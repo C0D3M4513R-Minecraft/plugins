@@ -13,11 +13,79 @@
     <packaging>pom</packaging>
     <version>0.1.0</version>
 
+    <licenses>
+        <license>
+            <name>MIT</name>
+            <url>https://opensource.org/licenses/MIT</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/Pixel-gaming/plugins</url>
+        <connection>scm:git</connection>
+    </scm>
+
+    <name>C0D3 M4513R's plugins and deps parent project</name>
+    <description>This package is intended to be used as a parent of a project to configure commonly used dependencies and plugins.</description>
+    <url>https://github.com/Pixel-gaming/plugins</url>
+
+    <developers>
+        <developer>
+            <id>c0d3m4513r</id>
+            <name>C0D3 M4513R</name>
+            <url>https://c0d3m4513r.com/</url>
+        </developer>
+    </developers>
+
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter</artifactId>
+                <version>5.9.2</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>3.12.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-reload4j</artifactId>
+                <version>1.7.36</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.c0d3m4513r</groupId>
+                <artifactId>Logger</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.c0d3m4513r.config</groupId>
+                <artifactId>checker</artifactId>
+                <version>1.0.0</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.26</version>
+            </dependency></dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.checkerframework</groupId>
+            <artifactId>checker-qual</artifactId>
+        </dependency>
+    </dependencies>
 
 
     <build>
