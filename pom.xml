@@ -6,12 +6,12 @@
     <parent>
         <groupId>com.c0d3m4513r.pom</groupId>
         <artifactId>checkerframework</artifactId>
-        <version>1.0.3</version>
+        <version>1.0.4</version>
     </parent>
 
     <artifactId>plugins</artifactId>
     <packaging>pom</packaging>
-    <version>0.2.2${snapshot}</version>
+    <version>0.2.3${snapshot}</version>
 
     <licenses>
         <license>
