@@ -11,7 +11,7 @@
 
     <artifactId>plugins</artifactId>
     <packaging>pom</packaging>
-    <version>0.2.5${snapshot}</version>
+    <version>0.2.6${snapshot}</version>
 
     <licenses>
         <license>
@@ -92,7 +92,7 @@
             <dependency>
                 <groupId>com.c0d3m4513r</groupId>
                 <artifactId>Logger</artifactId>
-                <version>1.0.1</version>
+                <version>1.0.3</version>
             </dependency>
             <dependency>
                 <groupId>com.c0d3m4513r.config</groupId>
@@ -139,7 +139,6 @@
                                 <goal>shade</goal>
                             </goals>
                             <configuration>
-                                <minimizeJar>false</minimizeJar>
                                 <shadeSourcesContent>true</shadeSourcesContent>
                                 <filters>
                                     <filter>
