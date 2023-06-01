@@ -11,7 +11,7 @@
 
     <artifactId>plugins</artifactId>
     <packaging>pom</packaging>
-    <version>0.2.4${snapshot}</version>
+    <version>0.2.5${snapshot}</version>
 
     <licenses>
         <license>
@@ -139,7 +139,7 @@
                                 <goal>shade</goal>
                             </goals>
                             <configuration>
-                                <minimizeJar>true</minimizeJar>
+                                <minimizeJar>false</minimizeJar>
                                 <shadeSourcesContent>true</shadeSourcesContent>
                                 <filters>
                                     <filter>
